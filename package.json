@@ -1,0 +1,27 @@
+{
+  "name": "objection-paranoia",
+  "version": "1.0.0",
+  "description": "A Objectionjs plugin to add soft delete.",
+  "main": "index.js",
+  "repository": "https://github.com/BunHouth/objection-paranoia.git",
+  "author": {
+    "name": "Bunhouth",
+    "email": "bunhouth99@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "objection",
+    "objectionjs",
+    "plugin",
+    "plugins",
+    "softdelete",
+    "delete"
+  ],
+  "peerDependencies": {
+    "objection": ">= 0.8"
+  },
+  "devDependencies": {
+    "knex": "^0.21.2",
+    "objection": "^2.2.1"
+  }
+}
