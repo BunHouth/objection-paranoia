@@ -1,0 +1,15 @@
+{
+  "presets": ["@babel/preset-env"],
+  "env": {
+    "production": {
+      "presets": [
+        ["minify", {
+            "builtIns": false,
+            "evaluate": false,
+            "mangle": false
+          }
+        ]
+      ]
+    }
+  }
+}

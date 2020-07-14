@@ -1,12 +1,17 @@
 {
   "name": "objection-paranoia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Objectionjs plugin to add soft delete.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/BunHouth/objection-paranoia.git",
   "author": {
     "name": "Bunhouth",
     "email": "bunhouth99@gmail.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production babel index.js -d lib",
+    "example": "babel-node example.js"
   },
   "license": "MIT",
   "keywords": [
@@ -21,6 +26,10 @@
     "objection": ">= 0.8"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-preset-minify": "^0.5.1",
     "knex": "^0.21.2",
     "objection": "^2.2.1"
   }
