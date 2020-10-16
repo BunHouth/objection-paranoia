@@ -1,6 +1,6 @@
 {
   "name": "objection-paranoia",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Objectionjs plugin to add soft delete.",
   "main": "lib/index.js",
   "repository": "https://github.com/BunHouth/objection-paranoia.git",

@@ -13,7 +13,8 @@ module.exports = {
 
         if (modelClass.softDelete) {
           this.onBuild(q => {
-            if (q.isFind() && !q.context().includeDeleted) {
+            const isUpsert = q._operations.filter((operator) => operator.name === 'upsertGraph').length > 0;
+            if (!isUpsert && q.isFind() && !q.context().includeDeleted) {
               q.where(`${q.tableRefFor(modelClass)}.${columnName}`, notDeletedValue);
             }
           });
