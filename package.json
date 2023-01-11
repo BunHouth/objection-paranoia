@@ -30,7 +30,7 @@
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "babel-preset-minify": "^0.5.1",
-    "knex": "^0.21.2",
+    "knex": "^2.4.0",
     "objection": "^2.2.1"
   }
 }
